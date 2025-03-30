@@ -1,0 +1,206 @@
+/* Base Styles */
+:root {
+    --primary-color: #005b94;
+    --secondary-color: #4a90e2;
+    --success-color: #50b83c;
+    --danger-color: #de3618;
+    --warning-color: #ffea8a;
+    --text-color: #212b36;
+    --text-light: #637381;
+    --border-color: #dfe3e8;
+    --bg-color: #f9fafb;
+    --white: #ffffff;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+  }
+  
+  /* Utility Classes */
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  /* Buttons */
+  .btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    border: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+  }
+  
+  .btn-primary:hover {
+    background-color: #004b7a;
+  }
+  
+  .btn-secondary {
+    background-color: var(--secondary-color);
+    color: white;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #3a7bc8;
+  }
+  
+  .btn-success {
+    background-color: var(--success-color);
+    color: white;
+  }
+  
+  .btn-success:hover {
+    background-color: #3d8e2d;
+  }
+  
+  /* Forms */
+  .input-group {
+    margin-bottom: 1rem;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+  
+  input[type="text"],
+  input[type="search"],
+  select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  /* HL7 Specific Styles */
+  .hl7-message {
+    background-color: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+  }
+  
+  .hl7-segment {
+    margin-bottom: 0.5rem;
+  }
+  
+  .hl7-segment-header {
+    background-color: #f5f5f5;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    font-family: 'Courier New', monospace;
+    border-bottom: 1px solid var(--border-color);
+  }
+  
+  .hl7-field {
+    display: flex;
+    padding: 0.25rem 1rem;
+    font-family: 'Courier New', monospace;
+  }
+  
+  .hl7-field:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .hl7-field-index {
+    color: var(--text-light);
+    min-width: 2rem;
+    margin-right: 0.5rem;
+    text-align: right;
+  }
+  
+  /* Tooltip */
+  .tooltip {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 0.5rem;
+    border-radius: 4px;
+    z-index: 100;
+    font-size: 0.8rem;
+    pointer-events: none;
+  }
+  
+  /* Loading Indicator */
+  .loading-indicator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+  
+  .spinner {
+    border: 3px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    border-top: 3px solid var(--primary-color);
+    width: 20px;
+    height: 20px;
+    animation: spin 1s linear infinite;
+    margin-right: 0.5rem;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .container {
+      padding: 0 0.5rem;
+    }
+    
+    .hl7-field {
+      flex-direction: column;
+    }
+    
+    .hl7-field-index {
+      text-align: left;
+      margin-bottom: 0.25rem;
+    }
+  }
+  
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 4px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+  }

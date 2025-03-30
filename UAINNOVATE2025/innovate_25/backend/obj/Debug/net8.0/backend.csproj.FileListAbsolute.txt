@@ -1,0 +1,5 @@
+C:\Users\donov\OneDrive\Desktop\UAINNOVATE2025\innovate_25\backend\obj\Debug\net8.0\backend.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\donov\OneDrive\Desktop\UAINNOVATE2025\innovate_25\backend\obj\Debug\net8.0\backend.AssemblyInfoInputs.cache
+C:\Users\donov\OneDrive\Desktop\UAINNOVATE2025\innovate_25\backend\obj\Debug\net8.0\backend.AssemblyInfo.cs
+C:\Users\donov\OneDrive\Desktop\UAINNOVATE2025\innovate_25\backend\obj\Debug\net8.0\backend.csproj.CoreCompileInputs.cache
+C:\Users\donov\OneDrive\Desktop\UAINNOVATE2025\innovate_25\backend\obj\Debug\net8.0\backend.sourcelink.json
